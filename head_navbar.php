@@ -10,24 +10,27 @@ echo '<nav class="navbar navbar-expand-sm bg-dark">
 				    <li class="nav-item">
 				      <a class="nav-link" href="#home">HOME</a>
 				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#services">SERVICES</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#about">ABOUT</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#events">EVENTS</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#gallery">GALLERY</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="#subscribe">SUBSCRIBE</a>
+				    <li class="nav-item dropdown">
+      					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        					SERVICES
+        				</a>
+      					<div class="dropdown-menu bg-dark">
+					        <a class="dropdown-item" href="#">Home Appliances</a>
+					        <a class="dropdown-item" href="#">Coaching</a>
+					        <a class="dropdown-item" href="#">Planning</a>
+					        <a class="dropdown-item" href="#">Decorations</a>
+					        <a class="dropdown-item" href="#">Labour</a>
+					        <a class="dropdown-item" href="#">Constructions</a>
+					        <a class="dropdown-item" href="#">Body Maintenance</a>
+					    </div>
 				    </li>
 				    <li class="nav-item">
 				      <a class="nav-link" href="#contact">CONTACT</a>
 				    </li>
+
+				    <li class="nav-item">
+				     	<button type="button" class="btn nav-link p-2 mx-2" data-toggle="modal" data-target="#signform">SIGN UP | SIGN IN</button>
+				    </li>			    
 		 		 </ul>
 	 		</div>
 	 	</div>

@@ -1,6 +1,15 @@
 $(document).ready(function(){
     $("#headnavbar").load("head_navbar.html");
+
 });
+function check_pass() {
+    if (document.getElementById('pwd1').value ==
+            document.getElementById('pwd2').value) {
+        document.getElementById('sudo').disabled = false;
+    } else {
+        document.getElementById('sudo').disabled = true;
+    }
+}
 /*
 //map
 function initMap() {
