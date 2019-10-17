@@ -1,5 +1,4 @@
-<?php
-echo '<nav class="navbar navbar-expand-sm bg-dark">  
+<nav class="navbar navbar-expand-sm bg-dark">  
 		<div class="container ">
 				<a class="navbar-brand" href="#">2BREADS</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -27,12 +26,23 @@ echo '<nav class="navbar navbar-expand-sm bg-dark">
 				    <li class="nav-item">
 				      <a class="nav-link" href="#contact">CONTACT</a>
 				    </li>
-
-				    <li class="nav-item">
-				     	<button type="button" class="btn nav-link p-2 mx-2" data-toggle="modal" data-target="#signform">SIGN UP | SIGN IN</button>
-				    </li>			    
+				     	<?php
+				     	if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    						echo '<li class="nav-item"><button type="button" class="btn nav-link p-2 mx-2" data-toggle="modal" data-target="#signform">SIGN IN | SIGN UP</button></li>';
+    					}
+    					else{
+    						echo '<li class="nav-item dropdown">
+      					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        					Hi,'.htmlspecialchars($_SESSION["uname"]).'
+        				</a>
+      					<div class="dropdown-menu bg-dark">
+					        <a class="dropdown-item" href="logout.php">Logout</a>
+					        <a class="dropdown-item" href="reset-password.php">Change Password</a>
+					    </div>
+				    </li>';
+    					}
+						?>			    
 		 		 </ul>
 	 		</div>
 	 	</div>
-</nav>';
-?>
+</nav>
