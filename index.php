@@ -16,6 +16,8 @@
 	include 'head_navbar.php';
 	include 'signmodal.php';
 	include 'carousel.php';
+	include 'home_services.php';
+	include 'footer.php';
 	?>
 </body>
 </html>

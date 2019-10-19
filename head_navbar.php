@@ -20,7 +20,8 @@
 					        <a class="dropdown-item" href="#">Decorations</a>
 					        <a class="dropdown-item" href="#">Labour</a>
 					        <a class="dropdown-item" href="#">Constructions</a>
-					        <a class="dropdown-item" href="#">Body Maintenance</a>
+					        <a class="dropdown-item" href="#">Personal Care</a>
+					        <a class="dropdown-item" href="#">Others</a>
 					    </div>
 				    </li>
 				    <li class="nav-item">
