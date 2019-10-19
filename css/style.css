@@ -13,9 +13,32 @@
 .navbar .navbar-nav .dropdown-item{
 	color: white;
 }
+.navbar .navbar-nav .dropdown-menu a:hover{
+	color: black;
+}
+
 .navbar .navbar-nav .nav-item .btn{
 	background-color: #d27e01;
 }
 .modal .modal-dialog .modal-content .nav-tabs .nav-link{
 	color: #d27e01;
 }
+.footers .container a {color:white;}
+.footers p {color: pink;}
+.footers ul {line-height:30px;}
+#social-fb:hover {
+     color: #3B5998;
+     transition:all .001s;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+     transition:all .001s;
+ }
+ #social-gp:hover {
+     color: #d34836;
+     transition:all .001s;
+ }
+ #social-em:hover {
+     color: #f39c12;
+     transition:all .001s;
+ }
