@@ -9,18 +9,24 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/style.js"></script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50" >
-	<!--Navbar-->
-	<?php 
+<body>
+<?php 
 	session_start();
 	include 'head_navbar.php';
-	
-	include 'carousel.php';
-	include 'home_services.php';
-	include 'contact.php';
-	include 'footer.php';
-	echo $_SESSION["uname"];
-	echo $_SESSION["id"];
-	?>
+?>
+	<div class="container">
+		<h1 class="text-center">Services</h1>
+		<div class="row float-right">
+			<div class="col-sm-4">
+				<form action="/" method="post" class="form-inline">
+					<div class="form-group">
+					    <input type="name" class="form-control shadow w-80" id="search-ws" name="search-ws" placeholder="Search by Service Name">&nbsp
+						<button class="btn btn-simple">Search</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 </body>
 </html>
